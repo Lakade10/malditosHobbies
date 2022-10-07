@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilosRevista/styleRevista.css">
-    <title>Revista</title>
+    <title>Malditos Hobbies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4489e1078d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Malditos Hobbies <img class="logo" src="../imagenesRevista/desarrollo-game.png" alt="Logo"></h1>
+        <p class="slogan">Tu portal al mundo Geek</p>
         <nav>
             <a href="seccionJuegos.html" class="navJuegos">Juegos</a>
             <a href="seccionPeliculas.html" class="navPeliculas">Peliculas</a>
@@ -20,25 +22,52 @@
         </nav>
     </header>
     <main>
-        <p>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            
-            Why do we use it?
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
+        <!-- comienza la sección de categorias en flexbox, con 3 divs: el espacio del card, la imagen y el texto -->
         <section class="flexCategorias">
-            
+            <div class="card">
+                <a href="seccionJuegos.html"><input  class="imgCard" type="image" src="../imagenesRevista/cardJuegos.jpg"/></a>
+                <div class="textosCat">
+                    <h2>Juegos</h2> 
+                </div>
+            </div>
+            <div class="card">
+                <a href="seccionPeliculas.html"><input  class="imgCard" type="image" src="../imagenesRevista/cardPeliculas.png"/></a>
+                <div class="textosCat">
+                    <h2>Películas</h2> 
+                </div>
+            </div>
+            <div class="card">
+                <a href="seccionTecnologia.html"><input  class="imgCard" type="image" src="../imagenesRevista/cardTecnologia.png"/></a>
+                <div class="textosCat">
+                    <h2>Tecnología</h2> 
+                </div>
+            </div>
         </section>
+        <!-- comienza la sección de noticias en grid, con los títulos h3, los articulos y sus divs con texto -->
         <section class="gridGeneral">
-
+            <h3>Última Novedad</h3>
+            <h3 id="otrasNoticias">Noticias</h3>
+            <article class="artMain">
+                <img src="../imagenesRevista/peliculaMario.jpg" alt="Anunciada Super Mario Movie">
+                <div class="textoArtMain"><p>Anunciada la película de Super Mario Bros: fecha, actores de voz y más.</p></div>
+            </article>
+            <article class="artMini1">
+                <img src="../imagenesRevista/overwatch2.jpg" alt="Problemas con los servers de OW2">
+                <div class="textoArtMini"><p>Overwatch 2 recién lanzado, pero con graves problemas de servidores.</p></div>
+            </article>
+            <article class="artMini2">
+                <img src="../imagenesRevista/rtx40series.jpg" alt="Anuncio serie 40 RTX">
+                <div class="textoArtMini"><p>Nueva serie RTX 40 de Nvidia: toda la información.</p></div>
+            </article>
         </section>
-    </main>    
+    </main>
+    <!-- footer en grid (a mejorar los posicionamientos)-->    
     <footer>
         <div class="gridFoot">
-            <a class="redsoc" href="#">a</a>
-            <a class="redsoc" href="#">a</a>
-            <a class="redsoc" href="#">a</a>
-            <span>Todos los derechos reservados @2022 <img class="logo" src="../imagenesRevista/desarrollo-game.png" alt="Logo"></span>   
+            <a class="redsoc" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <span>Web presentada para el Curso Codo a codo 4.0. Todos los derechos reservados @2022 <img class="logo" src="../imagenesRevista/desarrollo-game.png" alt="Logo"></span>   
         </div>
     </footer>
 </body>
