@@ -188,20 +188,74 @@ main {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+/* grid noticia */
+
+.gridNoticia {
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas: 
+    'fill title title title title fill2'
+    'fill autor date type social fill2'
+    'fill img img img img fill2'
+    'fill main main main main fill2'
+    'fill img2 img2 img2 img2 fill2'
+    'fill main2 main2 main2 main2 fill2';
+}
+
+.noticeFill {
+    grid-area: fill;
+    background-color: rgb(254, 245, 172);
+}
+
+.noticeFill2 {
+    grid-area: fill2;
+    background-color: rgb(254, 245, 172);
+}
+
+.noticeTitle {
+    grid-area: title;
+}
+
+.noticeAutor {
+    grid-area: autor;
+}
+
+.noticeDate {
+    grid-area: date;
+}
+
+.noticeType {
+    grid-area: type;
+}
+
+.noticeSocial {
+    grid-area: social;
+}
+
+.noticeImg {
+
+}
+
 /* grid footer */
 
 .gridFoot {
     display: grid;
     background-color: rgb(254, 245, 172);
-    grid-template-areas: 'redes redes redes'
-                        'reserved reserved reserved';
+    grid-template-areas: 'redes'
+                        'reserved';
+    padding: 15px 0;
+}
+
+.gridFoot div:first-child {
+    display: inline-block;
+    grid-area: redes;
+}
+
+.gridFoot div:last-child {
+    display: inline-block;
+    grid-area: reserved;
 }
 
 .redsoc {
-    grid-area: redes redes redes;
-}
-
-.gridFoot span {
-    display: inline-block;
-    grid-area: reserved;
+    padding: 0 10px;
 }
