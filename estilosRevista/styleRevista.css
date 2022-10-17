@@ -259,3 +259,75 @@ main {
 .redsoc {
     padding: 0 10px;
 }
+
+/*Seccion pelicula*/
+
+
+
+.ultimo{
+    
+    margin: 50px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: right;
+}
+
+
+
+.contenido-texto1{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+.contenido-texto1 h2{
+    font-size: 50px;
+    font-style: oblique;
+    
+}
+
+.contenido-texto2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+
+
+.contenido-texto2 h2{
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.contenido-texto3{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+.contenido-texto3 h2{
+    font-size: 50px;
+    font-style: oblique;
+}
