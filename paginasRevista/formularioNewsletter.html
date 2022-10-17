@@ -23,8 +23,20 @@
         </nav>
     </header>
     <main>
-        <h2>Formulario de suscripción al Newsletter</h2>
-        <p> Para suscribirte, por favor, completa con tus datos el siguiente formulario. Se te enviara un mail de confirmación al terminar el envío.</p>
+        <form action="https://formspree.io/f/mvoybokw" method="POST">
+            <h2>Formulario de suscripción al Newsletter</h2>
+            <p> Para suscribirte, por favor, completa con tus datos el siguiente formulario.
+             Se te enviara un mail de confirmación al terminar el envío.</p>
+            <label for="fName"><b>Ingresa tu nombre: </b></label><input type="text" name="fName" placeholder="aquí su nombre..."><br>
+            <label for="lName"><b>Ingresa tu apellido: </b></label><input type="text" name="lName" placeholder="aquí su apellido..."><br>
+            <label for="email"><b>Ingresa tu email: </b></label><input type="email" name="email" placeholder="donpepito@gmail.com"><br>
+            <p><b>¿Cuál es tu sección favorita? </b>
+            <input type="radio" name="section" value="Juegos"> Juegos
+            <input type="radio" name="section" value="Películas"> Películas
+            <input type="radio" name="section" value="Tecnología"> Tecnología
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
     </main>
     <footer>
         <div class="gridFoot">
