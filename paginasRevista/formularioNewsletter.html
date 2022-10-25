@@ -23,14 +23,14 @@
         </nav>
     </header>
     <main>
-        <form action="https://formspree.io/f/mvoybokw" method="POST">
+        <form id="form" name="formulario" action="#" method="POST" target="_blank">
             <h2>Formulario de suscripción al Newsletter</h2>
             <p> Para suscribirte, por favor, completa con tus datos el siguiente formulario.
              Se te enviara un mail de confirmación al terminar el envío.</p>
-            <label for="fName"><b>Ingresa tu nombre: </b></label><input type="text" name="fName" placeholder="aquí su nombre..."><br>
-            <label for="lName"><b>Ingresa tu apellido: </b></label><input type="text" name="lName" placeholder="aquí su apellido..."><br>
-            <label for="email"><b>Ingresa tu email: </b></label><input type="email" name="email" placeholder="donpepito@gmail.com"><br>
-            <p><b>¿Cuál es tu sección favorita? </b>
+            <label for="fName"><b>Ingresa tu nombre: </b></label><input id="nombreForm" type="text" name="fName" placeholder="aquí su nombre..."><br>
+            <label for="lName"><b>Ingresa tu apellido: </b></label><input id="apellidoForm" type="text" name="lName" placeholder="aquí su apellido..."><br>
+            <label for="email"><b>Ingresa tu email: </b></label><input id="emailForm" type="email" name="email" placeholder="donpepito@gmail.com"><br>
+            <p>(opcional) <b>¿Cuál es tu sección favorita? </b>
             <input type="radio" name="section" value="Juegos"> Juegos
             <input type="radio" name="section" value="Películas"> Películas
             <input type="radio" name="section" value="Tecnología"> Tecnología
@@ -48,5 +48,6 @@
             <div>Web presentada para el Curso Codo a codo 4.0. Todos los derechos reservados @2022 <img class="logo" src="../imagenesRevista/desarrollo-game.png" alt="Logo"></div>   
         </div>
     </footer> 
+    <script href="../javascriptRevista/formValidation.js"></script>
 </body>
 </html>
