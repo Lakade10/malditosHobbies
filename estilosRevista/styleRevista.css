@@ -23,7 +23,8 @@ h2 {
     font-family: 'Lobster Two', arial;
 }
 
-a:active, a:visited {
+a:active,
+a:visited {
     color: rgb(37, 49, 109);
 }
 
@@ -69,22 +70,22 @@ main {
 
 .flexCategorias {
     padding: 30px 0;
-	/* Flexbox */
-	display: flex;
-	gap: 40px;
+    /* Flexbox */
+    display: flex;
+    gap: 40px;
     justify-content: center;
 
-	/* Grid 
+    /* Grid 
 	display: grid;
 	grid-template-columns: 3fr;
 	gap: 20px; */
 }
 
 .imgCard {
-	border-radius: 40px;
-	min-height: 400px;
-	width: 70%;
-	transition: 0.5s all;
+    border-radius: 40px;
+    min-height: 400px;
+    width: 70%;
+    transition: 0.5s all;
     border: 0.6vh solid rgba(0, 0, 0, 0);
     position: relative;
 }
@@ -187,7 +188,9 @@ main {
     border: 2px solid black;
 }
 
-.artMain:hover div, .artMini1:hover div, .artMini2:hover div {
+.artMain:hover div,
+.artMini1:hover div,
+.artMini2:hover div {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -196,13 +199,13 @@ main {
 .gridNoticia {
     display: grid;
     row-gap: 15px;
-    grid-template-areas: 
-    'fill title title title title fill2'
-    'fill autor date type social fill2'
-    'fill img img img img fill2'
-    'fill main main main main fill2'
-    'fill img2 img2 img2 img2 fill2'
-    'fill main2 main2 main2 main2 fill2';
+    grid-template-areas:
+        'fill title title title title fill2'
+        'fill autor date type social fill2'
+        'fill img img img img fill2'
+        'fill main main main main fill2'
+        'fill img2 img2 img2 img2 fill2'
+        'fill main2 main2 main2 main2 fill2';
 }
 
 .gridNoticia p {
@@ -295,14 +298,17 @@ form h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form label, form input, form p {
+form label,
+form input,
+form p {
     padding: 5px;
     margin: 5px;
     text-align: left;
     border-radius: 10px;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     width: 70%;
 }
 
@@ -312,9 +318,11 @@ input[type=submit] {
     background-color: rgb(254, 245, 172);
     border-radius: 10px;
 }
- input[type=submit]:hover {
+
+input[type=submit]:hover {
     background-color: rgb(255, 238, 108);
- }
+}
+
 /* Alerta Newsletter */
 
 .alertaNewsletter {
@@ -335,7 +343,7 @@ input[type=submit] {
     display: grid;
     background-color: rgb(254, 245, 172);
     grid-template-areas: 'redes'
-                        'reserved';
+        'reserved';
     padding: 15px 0;
 }
 
@@ -350,7 +358,169 @@ input[type=submit] {
     grid-area: reserved;
 }
 
-.redsoc, .redsoc:active, .redsoc:visited {
+.redsoc,
+.redsoc:active,
+.redsoc:visited {
     padding: 0 10px;
     color: rgb(151, 210, 236);
+}
+
+@media screen and (max-width: 768px)
+
+/*Adapta la imagen en un dispositivo tablet*/
+    {
+
+    .autor {
+        font-size: 1px;
+    }
+
+    .textosCat {
+        font-size: 20px;
+    }
+
+    .imgCard {
+        min-height: 200px;
+    }
+
+    .gridNoticia img {
+        max-width: 900px;
+        max-height: 300px;
+    }
+
+    .gridNoticia p {
+        font-size: 1.0em;
+    }
+
+    .gridNoticia h2 {
+        font-size: 1.2em;
+    }
+
+    .noticeImg2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .alertaNewsletter {
+        font-size: 1.5em;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #form {
+        font-size: 1.2em;
+        width: 50%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 425px)
+
+/*Adapta la imagen en un dispositivo movil*/
+    {
+
+    .alertaNewsletter {
+        font-size: 1em;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    main {
+        background-color: rgb(95, 111, 148);
+        ;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    img.logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .gridGeneral h3 {
+        font-size: 1em;
+    }
+
+    .textosCat h2 {
+        font-size: 0.8em;
+    }
+
+    .imgCard {
+        min-height: 150px;
+    }
+
+    .gridNoticia img {
+
+        max-width: 300px;
+        max-height: 300px;
+
+    }
+
+    .noticeMain {
+        font-size: 15px;
+    }
+
+    .gridNoticia {
+        display: block;
+
+    }
+
+    .gridNoticia h2 {
+        font-size: 20px;
+    }
+
+    .gridNoticia p {
+        font-size: 0.8em;
+    }
+
+    .noticeImg2 {
+        min-width: 250px;
+    }
+
+    .gridGeneral {
+        display: inline-block;
+    }
+
+    .textoArtMain {
+        top: 85%;
+    }
+
+    .noticeImg2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #form {
+        font-size: 1em;
+        width: 80%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .imgCard {
+        min-height: 300px;
+    }
+
+    .textosCat {
+        font-size: 1.5em;
+    }
+    #form {
+        
+        width: 40%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
