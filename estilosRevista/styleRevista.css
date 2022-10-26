@@ -23,7 +23,8 @@ h2 {
     font-family: 'Lobster Two', arial;
 }
 
-a:active, a:visited {
+a:active,
+a:visited {
     color: rgb(37, 49, 109);
 }
 
@@ -69,22 +70,22 @@ main {
 
 .flexCategorias {
     padding: 30px 0;
-	/* Flexbox */
-	display: flex;
-	gap: 40px;
+    /* Flexbox */
+    display: flex;
+    gap: 40px;
     justify-content: center;
 
-	/* Grid 
+    /* Grid 
 	display: grid;
 	grid-template-columns: 3fr;
 	gap: 20px; */
 }
 
 .imgCard {
-	border-radius: 40px;
-	min-height: 400px;
-	width: 70%;
-	transition: 0.5s all;
+    border-radius: 40px;
+    min-height: 400px;
+    width: 70%;
+    transition: 0.5s all;
     border: 0.6vh solid rgba(0, 0, 0, 0);
     position: relative;
 }
@@ -187,7 +188,9 @@ main {
     border: 2px solid black;
 }
 
-.artMain:hover div, .artMini1:hover div, .artMini2:hover div {
+.artMain:hover div,
+.artMini1:hover div,
+.artMini2:hover div {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -196,13 +199,13 @@ main {
 .gridNoticia {
     display: grid;
     row-gap: 15px;
-    grid-template-areas: 
-    'fill title title title title fill2'
-    'fill autor date type social fill2'
-    'fill img img img img fill2'
-    'fill main main main main fill2'
-    'fill img2 img2 img2 img2 fill2'
-    'fill main2 main2 main2 main2 fill2';
+    grid-template-areas:
+        'fill title title title title fill2'
+        'fill autor date type social fill2'
+        'fill img img img img fill2'
+        'fill main main main main fill2'
+        'fill img2 img2 img2 img2 fill2'
+        'fill main2 main2 main2 main2 fill2';
 }
 
 .gridNoticia p {
@@ -299,14 +302,17 @@ form h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form label, form input, form p {
+form label,
+form input,
+form p {
     padding: 5px;
     margin: 5px;
     text-align: left;
     border-radius: 10px;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     width: 70%;
 }
 
@@ -316,7 +322,8 @@ input[type=submit] {
     background-color: rgb(254, 245, 172);
     border-radius: 10px;
 }
- input[type=submit]:hover {
+
+input[type=submit]:hover {
     background-color: rgb(255, 238, 108);
  }
 
@@ -343,7 +350,7 @@ input[type=submit] {
     display: grid;
     background-color: rgb(254, 245, 172);
     grid-template-areas: 'redes'
-                        'reserved';
+        'reserved';
     padding: 15px 0;
 }
 
@@ -358,8 +365,11 @@ input[type=submit] {
     grid-area: reserved;
 }
 
-.redsoc, .redsoc:active, .redsoc:visited {
+.redsoc,
+.redsoc:active,
+.redsoc:visited {
     padding: 0 10px;
+<<<<<<< HEAD
     color: rgb(151, 210, 236);
 }
 
