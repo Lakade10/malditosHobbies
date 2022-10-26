@@ -362,3 +362,235 @@ input[type=submit] {
     padding: 0 10px;
     color: rgb(151, 210, 236);
 }
+
+@media screen and (max-width: 768px)
+
+/*Adapta la imagen en un dispositivo tablet*/
+    {
+
+    .autor {
+        font-size: 1px;
+    }
+
+    .textosCat {
+        font-size: 20px;
+    }
+
+    .imgCard {
+        min-height: 200px;
+    }
+
+    .gridNoticia img {
+        max-width: 900px;
+        max-height: 300px;
+    }
+
+    .gridNoticia p {
+        font-size: 1.0em;
+    }
+
+    .gridNoticia h2 {
+        font-size: 1.2em;
+    }
+
+    .noticeImg2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .alertaNewsletter {
+        font-size: 1.5em;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #form {
+        font-size: 1.2em;
+        width: 50%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 425px)
+
+/*Adapta la imagen en un dispositivo movil*/
+    {
+
+    .alertaNewsletter {
+        font-size: 1em;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    main {
+        background-color: rgb(95, 111, 148);
+        ;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    img.logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .gridGeneral h3 {
+        font-size: 1em;
+    }
+
+    .textosCat h2 {
+        font-size: 0.8em;
+    }
+
+    .imgCard {
+        min-height: 150px;
+    }
+
+    .gridNoticia img {
+
+        max-width: 300px;
+        max-height: 300px;
+
+    }
+
+    .noticeMain {
+        font-size: 15px;
+    }
+
+    .gridNoticia {
+        display: block;
+
+    }
+
+    .gridNoticia h2 {
+        font-size: 20px;
+    }
+
+    .gridNoticia p {
+        font-size: 0.8em;
+    }
+
+    .noticeImg2 {
+        min-width: 250px;
+    }
+
+    .gridGeneral {
+        display: inline-block;
+    }
+
+    .textoArtMain {
+        top: 85%;
+    }
+
+    .noticeImg2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #form {
+        font-size: 1em;
+        width: 80%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .imgCard {
+        min-height: 300px;
+    }
+
+    .textosCat {
+        font-size: 1.5em;
+    }
+    #form {
+        
+        width: 40%;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/*Seccion pelicula*/
+
+
+
+.ultimo{
+    
+    margin: 50px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: right;
+}
+
+
+
+.contenido-texto1{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+.contenido-texto1 h2{
+    font-size: 50px;
+    font-style: oblique;
+    
+}
+
+.contenido-texto2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+
+
+.contenido-texto2 h2{
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.contenido-texto3{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 90%;
+    gap:100px;
+    margin: 55px;
+    padding:40px;
+    font-size: 20px;
+    background-color: rgb(66, 77, 131) ;
+}
+
+
+.contenido-texto3 h2{
+    font-size: 50px;
+    font-style: oblique;
+}
