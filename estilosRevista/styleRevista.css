@@ -233,18 +233,22 @@ main {
 
 .noticeAutor {
     grid-area: autor;
+    background-color: rgb(151, 210, 236);
 }
 
 .noticeDate {
     grid-area: date;
+    background-color: rgb(255, 238, 108);
 }
 
 .noticeType {
     grid-area: type;
+    background-color: rgb(151, 210, 236);
 }
 
 .noticeSocial {
     grid-area: social;
+    background-color: rgb(255, 238, 108);
 }
 
 .noticeImg {
@@ -314,6 +318,10 @@ input[type=submit] {
 }
  input[type=submit]:hover {
     background-color: rgb(255, 238, 108);
+ }
+
+ #api {
+    color: rgb(68, 68, 68);
  }
 /* Alerta Newsletter */
 

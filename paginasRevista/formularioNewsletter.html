@@ -26,7 +26,8 @@
         <form id="form" name="formulario" action="">
             <h2>Formulario de suscripción al Newsletter</h2>
             <p> Para suscribirte, por favor, completa con tus datos el siguiente formulario.
-             Se te enviara un mail de confirmación al terminar el envío.</p>
+             Se te enviara un mail de confirmación al terminar el envío. El nombre y apellido deben contener menos de 33
+             letras, el email debe contener ".", "@" y menos de 33 letras</p>
             <label for="fName"><b>Ingresa tu nombre: </b></label><input id="fName" type="text" name="fName" placeholder="aquí su nombre..."><br>
             <label for="lName"><b>Ingresa tu apellido: </b></label><input id="lName" type="text" name="lName" placeholder="aquí su apellido..."><br>
             <label for="email"><b>Ingresa tu email: </b></label><input id="email" type="email" name="email" placeholder="donpepito@gmail.com"><br>
@@ -36,6 +37,7 @@
             <input type="radio" name="section" value="Tecnología"> Tecnología
             </p>
             <input type="submit" value="Enviar">
+            <p id="api">(aquí aparecera una trivia en inglés sobre videojuegos)</p>
         </form>
     </main>
     <footer>

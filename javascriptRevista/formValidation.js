@@ -3,6 +3,8 @@ var nombre = document.getElementById("fName");
 var apellido = document.getElementById("lName");
 var email = document.getElementById("email");
 
+const url = 'https://opentdb.com/api.php?amount=1'
+
 function validaNombre() {
     const nombreValor = nombre.value.trim();
     if (!nombreValor){
@@ -56,73 +58,19 @@ function validaApellido() {
     }
 }
 
+function API() {
+fetch(url)
+.then (response => response.json())
+.then (data => {
+    let api = document.getElementById("api");
+    api.style.color = 'rgb(68, 68, 68)';
+    api.innerHTML = `<p><b>Question: </b>${(data.results[0].question)}</p><p><b>Answer: </b>${data.results[0].correct_answer}</p>`;
+})}
+
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     validaNombre();
     validaApellido();
     validaEmail();
+    API();
 })
-
-
-
-/* var form = document.getElementById("form");
-
-form.addEventListener("submit", function(evt){
-    evt.preventDefault();
-    let nombre = document.getElementById("fName").value;
-    if (nombre === null || nombre.length == 0 || /^\s+$/.test(valor)) {
-      console.log("El campo debe ser completado");
-      return false;
-    }
-});
-
-form.addEventListener("submit", function(evt){
-    evt.preventDefault();
-    let apellido = document.getElementById("lName").value;
-    if (apellido == null || apellido.length == 0 || /^\s+$/.test(valor)) {
-      console.log("El campo debe ser completado");
-      return false;
-    }
-}); */
-
-
-
-
-/* window.addEventListener('load', ()=> {
-    const form = document.getElementById('form');
-    const nombre = document.getElementById('nombreForm');
-    const apellido = document.getElementById('apellidoForm');
-    const email = document.getElementById('emailForm');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        validaCampos();
-    })
-
-    const validaCampos = ()=> {
-        const nombreValor = nombre.value.trim();
-        const apellidoValor = apellido.value.trim();
-        const emailValor = email.value.trim();
-
-        if (!nombreValor){
-            alert('Campo vacío');
-            return false;
-        } else {
-            alert('Válido');
-        }
-
-        if (!apellidoValor){
-            alert('Campo vacío');
-            return false;
-        } else {
-            alert('Válido');
-        }
-
-        if (!emailValor){
-            alert('Campo vacío');
-            return false;
-        } else {
-            alert('Válido');
-        }
-    }
-}) */
