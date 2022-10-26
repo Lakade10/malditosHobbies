@@ -3,47 +3,64 @@ var nombre = document.getElementById("fName");
 var apellido = document.getElementById("lName");
 var email = document.getElementById("email");
 
-function validaCampos() {
+function validaNombre() {
     const nombreValor = nombre.value.trim();
-    const apellidoValor = apellido.value.trim();
-    const emailValor = email.value.trim();
-    
     if (!nombreValor){
-        alert('Completa el nombre');
+        nombre.style.border = "2px solid red";
+        console.log('Completa el nombre');
         return false;
     } else if (nombreValor.length >= 33) {
-        alert('El nombre no puede contener 33 letras o más');
+        nombre.style.border = "2px solid red";
+        console.log('El nombre no puede contener 33 letras o más');
         return false;
+    } else {
+        nombre.style.border = "2px solid green";
     }
+}
 
-
-    if (!apellidoValor){
-        alert('Completa el apellido');
-        return false;
-    } else if (apellidoValor.length >= 33) {
-        alert('El apellido no puede contener 33 letras o más');
-        return false;
-    }
-
+function validaEmail() {
+    const emailValor = email.value.trim();
     if (!emailValor){
-        alert('Completa el email');
+        email.style.border = "2px solid red";
+        console.log('Completa el email');
         return false;
     } else if (emailValor.length >= 33) {
-        alert('El email no puede contener 33 letras o más');
+        email.style.border = "2px solid red";
+        console.log('El email no puede contener 33 letras o más');
         return false;
     } else if (!emailValor.includes("@")) {
-        alert('El email no contiene un @');
+        email.style.border = "2px solid red";
+        alconsole.logrt('El email no contiene un @');
         return false;
     } else if (!emailValor.includes(".")) {
-        alert('El email no contiene "." ');
+        email.style.border = "2px solid red";
+        console.log('El email no contiene "." ');
         return false;
+    } else {
+        email.style.border = "2px solid green";
     }
+}
 
+function validaApellido() {
+    const apellidoValor = apellido.value.trim();
+    if (!apellidoValor){
+        apellido.style.border = "2px solid red";
+        console.log('Completa el apellido');
+        return false;
+    } else if (apellidoValor.length >= 33) {
+        apellido.style.border = "2px solid red";
+        console.log('El apellido no puede contener 33 letras o más');
+        return false;
+    } else {
+        apellido.style.border = "2px solid green";
+    }
 }
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    validaCampos();
+    validaNombre();
+    validaApellido();
+    validaEmail();
 })
 
 
